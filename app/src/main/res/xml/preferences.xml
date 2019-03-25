@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto" >>
+    <ListPreference
+        android:key="pref_theme"
+        android:defaultValue="Flowers"
+        android:entries="@array/ThemeNames"
+        android:summary="@string/themeSummary"
+        android:entryValues="@array/ThemeValues"
+        android:title="@string/theme" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="check_show_name"
+        android:title="Show name" />
+    <com.example.memory3.SeekBarDialogPreference
+        android:key="pref_maxNCardPairs"
+        android:defaultValue="10"
+        android:dialogMessage="Max. value:"
+        android:max="30"
+        android:title="Maximum number of card pairs"
+        android:summary="Number of card pairs in the game."
+        custom:min="1" />
+    <com.example.memory3.SeekBarDialogPreference
+        android:key="pref_cardUncoveredTime"
+        android:defaultValue="1000"
+        android:dialogMessage="Time both cards are visible [ms]:"
+        android:max="2000"
+        android:title="Time both cards are visible [ms]"
+        android:summary="Time both cards are visible [ms]."
+        custom:min="100" />
+</PreferenceScreen>

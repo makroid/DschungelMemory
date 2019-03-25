@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="ThemeNames">
+        <item>Flowers</item>
+        <item>Dschungel</item>
+    </string-array>
+
+    <string-array name="ThemeValues">
+        <item>Flowers</item>
+        <item>Dschungel</item>
+    </string-array>
+</resources>
