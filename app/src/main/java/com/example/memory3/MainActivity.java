@@ -90,6 +90,8 @@ public class MainActivity extends Activity implements SharedPreferences.OnShared
                                 int gwidth = mGridView.getColumnWidth()*mGridView.getNumColumns();
                                 int padding = (width - gwidth) / 2;
                                 ll.setPadding(padding, 10, padding, 10);
+
+                                ll.setBackgroundColor(getResources().getColor(android.R.color.background_dark));
                             }
                         });
 
@@ -255,9 +257,9 @@ public class MainActivity extends Activity implements SharedPreferences.OnShared
             MemoryImageView imageView;
             if (convertView == null) {
                 imageView = new MemoryImageView(mContext, position, mGame);
-                imageView.setLayoutParams(new GridView.LayoutParams(198, 198));
+                imageView.setLayoutParams(new GridView.LayoutParams(194, 198));
                 imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-                imageView.setPadding(1, 1, 1, 1);
+                imageView.setPadding(2, 2, 2, 2);
             } else {
                 imageView = (MemoryImageView) convertView;
             }
